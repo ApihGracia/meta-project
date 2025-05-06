@@ -45,7 +45,7 @@ class ProductIndex extends Component
             $this->updateMode = false;
         } else {
             $product = Product::create($input);
-            session()->flash('message', 'Product Created');
+            session()->flash('message', 'Product Created'); 
         }
 
         $this->reset(['name', 'description', 'price']);
